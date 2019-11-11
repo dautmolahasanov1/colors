@@ -1,0 +1,335 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+.color-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.text-wrapper {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: lighter;
+  top: 55px;
+  right: 20px;
+  transform: rotate(45deg);
+  text-transform: uppercase;
+}
+
+.color-holder {
+  margin-top: 7%;
+  height: 7cm;
+  flex: 0 0 10cm;
+  border-radius: 10px;
+  position: relative;
+}
+
+.color-holder1 {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--c120) 0%,
+    var(--c120) 12.5%,
+    var(--c124) 12.5%,
+    var(--c124) 25%,
+    var(--c54) 25%,
+    var(--c54) 37.5%,
+    var(--c50) 37.5%,
+    var(--c50) 50%,
+    var(--c109) 50%,
+    var(--c109) 62.5%,
+    var(--c107) 62.5%,
+    var(--c107) 75%,
+    var(--c2) 75%,
+    var(--c2) 87.5%,
+    var(--c17) 87.5%,
+    var(--c17) 100%
+  );
+}
+
+
+.color-holder2 {
+  background-image: repeating-linear-gradient(
+          45deg,
+          var(--c69) 0%,
+          var(--c69) 12.5%,
+          var(--c76) 12.5%,
+          var(--c76) 25%,
+          var(--c141) 25%,
+          var(--c141) 37.5%,
+          var(--c144) 37.5%,
+          var(--c144) 50%,
+          var(--c21) 50%,
+          var(--c21) 62.5%,
+          var(--c24) 62.5%,
+          var(--c24) 75%,
+          var(--c82) 75%,
+          var(--c82) 87.5%,
+          var(--c85) 87.5%,
+          var(--c85) 100%
+  );
+}
+
+.color-holder3 {
+  background-image: repeating-linear-gradient(
+          45deg,
+          var(--c131) 0%,
+          var(--c131) 12.5%,
+          var(--c135) 12.5%,
+          var(--c135) 25%,
+          var(--c47) 25%,
+          var(--c47) 37.5%,
+          var(--c48) 37.5%,
+          var(--c48) 50%,
+          var(--c66) 50%,
+          var(--c66) 62.5%,
+          var(--c76) 62.5%,
+          var(--c76) 75%,
+          var(--c155) 75%,
+          var(--c155) 87.5%,
+          var(--c157) 87.5%,
+          var(--c157) 100%
+  );
+}
+
+.color-holder4 {
+  background-image: repeating-linear-gradient(
+          45deg,
+          var(--c103) 0%,
+          var(--c103) 12.5%,
+          var(--c105) 12.5%,
+          var(--c105) 25%,
+          var(--c11) 25%,
+          var(--c11) 37.5%,
+          var(--c16) 37.5%,
+          var(--c16) 50%,
+          var(--c26) 50%,
+          var(--c26) 62.5%,
+          var(--c36) 62.5%,
+          var(--c36) 75%,
+          var(--c86) 75%,
+          var(--c86) 87.5%,
+          var(--c90) 87.5%,
+          var(--c90) 100%
+  );
+
+}
+
+@media print {
+  .color-holder4 {
+    page-break-after: always;
+  }
+}
+
+.color-holder5 {
+  background-image: repeating-linear-gradient(
+          45deg,
+          var(--c122) 0%,
+          var(--c122) 12.5%,
+          var(--c132) 12.5%,
+          var(--c132) 25%,
+          var(--c106) 25%,
+          var(--c106) 37.5%,
+          var(--c114) 37.5%,
+          var(--c114) 50%,
+          var(--c71) 50%,
+          var(--c71) 62.5%,
+          var(--c77) 62.5%,
+          var(--c77) 75%,
+          var(--c35) 75%,
+          var(--c35) 87.5%,
+          var(--c28) 87.5%,
+          var(--c28) 100%
+  );
+}
+
+.color-holder6 {
+  background-image: repeating-linear-gradient(
+          45deg,
+          var(--c57) 0%,
+          var(--c57) 12.5%,
+          var(--c52) 12.5%,
+          var(--c52) 25%,
+          var(--c3) 25%,
+          var(--c3) 37.5%,
+          var(--c8) 37.5%,
+          var(--c8) 50%,
+          var(--c140) 50%,
+          var(--c140) 62.5%,
+          var(--c150) 62.5%,
+          var(--c150) 75%,
+          var(--c96) 75%,
+          var(--c96) 87.5%,
+          var(--c97) 87.5%,
+          var(--c97) 100%
+  );
+}
